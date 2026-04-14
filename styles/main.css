@@ -436,9 +436,10 @@ body::before {
   font-size: 17px;
   line-height: 1.85;
   color: var(--text-secondary);
-  max-width: 640px;
+  max-width: 780px;
   margin: 0 auto 16px;
   font-family: var(--font-cn);
+  text-align: center;
 }
 
 .hero-body-en {
@@ -1167,8 +1168,9 @@ body::before {
 
 .hardware-device {
   position: relative;
-  width: 360px;
-  height: 260px;
+  width: 100%;
+  max-width: 680px;
+  height: auto;
   margin: 48px auto;
 }
 
