@@ -333,3 +333,37 @@ rStyle.textContent = `
   }
 `;
 document.head.appendChild(rStyle);
+
+
+/* ============================================================
+   10. COMING SOON TOAST — for data-coming-soon buttons
+   ============================================================ */
+(function initComingSoonToast() {
+  // Create toast element once
+  const toast = document.createElement('div');
+  toast.className = 'coming-soon-toast';
+  toast.innerHTML = `
+    <span class="coming-soon-toast-icon">⏳</span>
+    <span>即将上线，敬请期待</span>
+  `;
+  document.body.appendChild(toast);
+
+  let hideTimer = null;
+
+  function showToast() {
+    clearTimeout(hideTimer);
+    toast.classList.add('show');
+    hideTimer = setTimeout(() => {
+      toast.classList.remove('show');
+    }, 2200);
+  }
+
+  // Delegate click on all [data-coming-soon] elements
+  document.addEventListener('click', (e) => {
+    const btn = e.target.closest('[data-coming-soon]');
+    if (btn) {
+      e.preventDefault();
+      showToast();
+    }
+  });
+})();
