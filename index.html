@@ -29,18 +29,23 @@
 
       <!-- Menu -->
       <ul class="nav-menu" id="nav-menu" role="list">
-        <li><a href="#hero" id="nav-home">首页</a></li>
-        <li><a href="#revolution" id="nav-engine">核心引擎</a></li>
-        <li><a href="#skills" id="nav-skills">Skill 生态</a></li>
-        <li><a href="#enterprise" id="nav-enterprise">企业方案</a></li>
-        <li><a href="#hardware" id="nav-hardware">智能终端</a></li>
-        <li><a href="#footer" id="nav-about">关于我们</a></li>
+        <li><a href="#hero" id="nav-home" data-i18n="nav.home">首页</a></li>
+        <li><a href="#revolution" id="nav-engine" data-i18n="nav.engine">核心引擎</a></li>
+        <li><a href="#skills" id="nav-skills" data-i18n="nav.skills">Skill 生态</a></li>
+        <li><a href="#enterprise" id="nav-enterprise" data-i18n="nav.enterprise">企业方案</a></li>
+        <li><a href="#hardware" id="nav-hardware" data-i18n="nav.hardware">智能终端</a></li>
+        <li><a href="#footer" id="nav-about" data-i18n="nav.about">关于我们</a></li>
       </ul>
 
       <!-- Actions -->
       <div class="nav-actions">
-        <a href="#footer" class="btn btn-ghost" id="nav-cta-secondary">模型广场</a>
-        <a href="#footer" class="btn btn-primary" id="nav-cta-primary">预约演示</a>
+        <button class="lang-switcher" id="lang-switcher" aria-label="Switch language">
+          <span class="lang-opt" data-lang="zh">ZH</span>
+          <span class="lang-divider">|</span>
+          <span class="lang-opt" data-lang="en">EN</span>
+        </button>
+        <a href="#footer" class="btn btn-ghost" id="nav-cta-secondary" data-i18n="nav.modelHub">模型广场</a>
+        <a href="#footer" class="btn btn-primary" id="nav-cta-primary" data-i18n="nav.bookDemo">预约演示</a>
       </div>
 
       <!-- Mobile toggle -->
@@ -66,25 +71,25 @@
     <!-- Badge -->
     <div class="hero-badge fade-in">
       <span class="hero-badge-dot"></span>
-      OpenClaw Engine · Agentic AI · 全球首发
+      <span data-i18n="hero.badge">OpenClaw Engine · Agentic AI · 全球首发</span>
     </div>
 
     <!-- H1 -->
     <h1 class="hero-h1 fade-up">
-      跨越屏幕，<br />
-      <span class="highlight">干预现实。</span>
+      <span data-i18n="hero.h1a">跨越屏幕，</span><br />
+      <span class="highlight" data-i18n="hero.h1b">干预现实。</span>
     </h1>
 
     <!-- H2 -->
     <h2 class="hero-h2 fade-up" style="transition-delay:0.1s">
-      从思考，到行动。
+      <span data-i18n="hero.h2">从思考，到行动。</span>
     </h2>
 
     <!-- Body -->
-    <p class="hero-body fade-up" style="transition-delay:0.2s">
+    <p class="hero-body fade-up" style="transition-delay:0.2s" data-i18n="hero.body">
       过去十年，AI 学会了像人一样交谈；现在，PowerMatrix 赋予它改变物理世界的权限。我们的使命，是终结无穷尽的对话框，击穿 AI 与生活的最后 1 厘米——让智慧止于思考，始于执行。
     </p>
-    <p class="hero-body-en fade-up" style="transition-delay:0.25s">
+    <p class="hero-body-en fade-up" style="transition-delay:0.25s" data-i18n="hero.bodyEn">
       From Conversational AI to Agentic Action.
     </p>
 
@@ -95,10 +100,10 @@
           <circle cx="8" cy="8" r="3" fill="currentColor"/>
           <path d="M8 1v2M8 13v2M1 8h2M13 8h2M3.05 3.05l1.41 1.41M11.54 11.54l1.41 1.41M11.54 4.46l-1.41 1.41M4.95 11.54l-1.41 1.41" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
         </svg>
-        驱动 OpenClaw 引擎
+        <span data-i18n="hero.cta1">驱动 OpenClaw 引擎</span>
       </a>
       <a href="#enterprise" class="btn btn-outline" id="hero-cta-secondary">
-        部署数字员工
+        <span data-i18n="hero.cta2">部署数字员工</span>
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
@@ -120,12 +125,12 @@
 <section id="revolution" class="section" aria-label="交互革命">
   <div class="container">
 
-    <div class="overline fade-up">核心引擎</div>
-    <h2 class="section-title fade-up" style="transition-delay:0.08s">消息即指令，沟通即执行。</h2>
+    <div class="overline fade-up" data-i18n="rev.overline">核心引擎</div>
+    <h2 class="section-title fade-up" style="transition-delay:0.08s" data-i18n="rev.title">消息即指令，沟通即执行。</h2>
     <p class="section-body fade-up" style="transition-delay:0.16s">
-      真正的技术革命，是让交互界面消失。<br />
-      OpenClaw 颠覆了"打开后台、键入 Prompt"的旧石器范式。它潜伏于微信、飞书及您的协作关系中，通过极致的拟人化感知，将跨平台调度简化为一句话的托付。<br />
-      这不再是对话。这是<strong style="color:var(--text-primary)">授权</strong>。
+      <span data-i18n="rev.body1">真正的技术革命，是让交互界面消失。</span><br />
+      <span data-i18n="rev.body2">OpenClaw 颠覆了"打开后台、键入 Prompt"的旧石器范式。它潜伏于微信、飞书及您的协作关系中，通过极致的拟人化感知，将跨平台调度简化为一句话的托付。</span><br />
+      <span data-i18n="rev.body3">这不再是对话。这是</span><strong style="color:var(--text-primary)" data-i18n="rev.auth">授权</strong><span data-i18n="rev.body3end">。</span>
     </p>
 
     <!-- Left vs Right comparison -->
@@ -159,17 +164,17 @@
       <!-- RIGHT: New paradigm -->
       <div class="revolution-right">
         <div class="wechat-mock">
-          <div class="wechat-header">OpenClaw 数字助理</div>
+          <div class="wechat-header" data-i18n="rev.chatTitle">OpenClaw 数字助理</div>
           <div class="wechat-body" id="wechat-body">
 
             <div class="msg-row right">
               <div class="msg-avatar">我</div>
-              <div class="msg-bubble">帮我整理上周所有客户的跟进邮件，并生成一份总结报告，发到群里。</div>
+              <div class="msg-bubble" data-i18n="rev.msg1">帮我整理上周所有客户的跟进邮件，并生成一份总结报告，发到群里。</div>
             </div>
 
             <div class="msg-row">
               <div class="msg-avatar ai">AI</div>
-              <div class="msg-bubble">
+              <div class="msg-bubble" data-i18n="rev.msg2">
                 收到，正在调用邮件感知、文档智理和飞书推送三项 Skill，预计 40 秒完成…
               </div>
             </div>
@@ -179,9 +184,9 @@
               <div class="msg-bubble">
                 <div class="msg-status">
                   <div class="pulse-ring"></div>
-                  任务已闭环 ✓
+                  <span data-i18n="rev.msgStatus">任务已闭环 ✓</span>
                 </div>
-                共整理 23 封邮件，报告已推送至《客户周报》群。
+                <span data-i18n="rev.msg3">共整理 23 封邮件，报告已推送至《客户周报》群。</span>
               </div>
             </div>
 
@@ -200,13 +205,13 @@
       </div>
       <div class="highlight-card glass fade-up" style="transition-delay:0.1s">
         <div class="highlight-icon">🌐</div>
-        <div class="highlight-title">全时域响应</div>
-        <p class="highlight-body">7×24h 待命，无界协作。数字员工永不请假，永不疲劳，毫秒级唤醒。</p>
+        <div class="highlight-title" data-i18n="rev.h2">全时域响应</div>
+        <p class="highlight-body" data-i18n="rev.h2b">7×24h 待命，无界协作。数字员工永不请假，永不疲劳，毫秒级唤醒。</p>
       </div>
       <div class="highlight-card glass fade-up" style="transition-delay:0.2s">
         <div class="highlight-icon">🤝</div>
-        <div class="highlight-title">类人级交互</div>
-        <p class="highlight-body">如同与最默契的助理共事。理解上下文，记住偏好，主动汇报进度。</p>
+        <div class="highlight-title" data-i18n="rev.h3">类人级交互</div>
+        <p class="highlight-body" data-i18n="rev.h3b">如同与最默契的助理共事。理解上下文，记住偏好，主动汇报进度。</p>
       </div>
     </div>
 
@@ -221,8 +226,8 @@
   <div class="container">
 
     <div class="skills-header">
-      <div class="overline fade-up">Skill 生态</div>
-      <h2 class="section-title fade-up" style="transition-delay:0.08s">可生长的数字肌体。</h2>
+      <div class="overline fade-up" data-i18n="skills.overline">Skill 生态</div>
+      <h2 class="section-title fade-up" style="transition-delay:0.08s" data-i18n="skills.title">可生长的数字肌体。</h2>
       <p class="section-body fade-up" style="transition-delay:0.16s">
         OpenClaw 是大脑，Skill 即为其连接万物的神经与肌肉。<br />
         它不是死板的代码插件，而是被蒸馏后的执行基因。通过排列组合 Skill，AI 得以完成跨平台的精密"连招"。
@@ -258,8 +263,8 @@
           </svg>
         </div>
         <div class="skill-number">02</div>
-        <div class="skill-name">界面跨越</div>
-        <p class="skill-desc">模拟触碰与点击，击穿软件间的数据高墙。从 CRM 到 ERP，任何界面皆可操控，数据孤岛彻底消除。</p>
+        <div class="skill-name" data-i18n="skills.s2name">界面跨越</div>
+        <p class="skill-desc" data-i18n="skills.s2desc">模拟触碰与点击，击穿软件间的数据高墙。从 CRM 到 ERP，任何界面皆可操控，数据孤岛彻底消除。</p>
       </div>
 
       <!-- Card 3: 文档智理 -->
@@ -272,8 +277,8 @@
           </svg>
         </div>
         <div class="skill-number">03</div>
-        <div class="skill-name">文档智理</div>
-        <p class="skill-desc">自动化读写与结构转换，终结机械劳动。Excel、Word、PDF、数据库一键互通，报告自动生成。</p>
+        <div class="skill-name" data-i18n="skills.s3name">文档智理</div>
+        <p class="skill-desc" data-i18n="skills.s3desc">自动化读写与结构转换，终结机械劳动。Excel、Word、PDF、数据库一键互通，报告自动生成。</p>
       </div>
 
       <!-- Card 4: GEO 内容营销引擎 -->
@@ -292,12 +297,12 @@
           </svg>
         </div>
         <div class="skill-number">04</div>
-        <div class="skill-name">GEO 内容营销引擎</div>
-        <p class="skill-desc">针对小红书、抖音等平台的生成式引擎优化方案。从关键词策略、爆款选题生成到内容分发执行，一站定制品牌社交搜索占位能力。</p>
+        <div class="skill-name" data-i18n="skills.s4name">GEO 内容营销引擎</div>
+        <p class="skill-desc" data-i18n="skills.s4desc">针对小红书、抖音等平台的生成式引擎优化方案。从关键词策略、爆款选题生成到内容分发执行，一站定制品牌社交搜索占位能力。</p>
         <div class="skill-tags">
-          <span class="tag tag-red">小红书</span>
-          <span class="tag tag-teal">抖音</span>
-          <span class="tag tag-neutral">搜索占位</span>
+          <span class="tag tag-red" data-i18n="skills.tag1">小红书</span>
+          <span class="tag tag-teal" data-i18n="skills.tag2">抖音</span>
+          <span class="tag tag-neutral" data-i18n="skills.tag3">搜索占位</span>
         </div>
       </div>
 
@@ -307,15 +312,15 @@
     <div class="geo-banner fade-up" id="geo-banner">
       <div class="geo-banner-inner">
         <div>
-          <div class="geo-hot-badge">🔥 热门方案上线</div>
-          <div class="geo-title">小红书 &amp; 抖音 GEO Skill 套件</div>
-          <p class="geo-desc">
+          <div class="geo-hot-badge" data-i18n="skills.geoBadge">🔥 热门方案上线</div>
+          <div class="geo-title" data-i18n="skills.geoTitle">小红书 &amp; 抖音 GEO Skill 套件</div>
+          <p class="geo-desc" data-i18n="skills.geoDesc">
             流量红利消退，搜索权重崛起。PowerMatrix 推出针对社交平台的生成式引擎优化 (GEO) 专用 Skill。让 AI 理解平台算法，批量生成高权重内容，抢占用户搜索结果第一屏。
           </p>
         </div>
         <div style="flex-shrink:0;">
           <a href="#footer" class="btn btn-outline" id="geo-cta" style="white-space:nowrap;">
-            查看营销增长方案
+            <span data-i18n="skills.geoCta">查看营销增长方案</span>
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
               <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
@@ -386,9 +391,9 @@
 
       <!-- Content -->
       <div class="enterprise-content">
-        <div class="overline fade-up">企业方案</div>
-        <h2 class="section-title fade-up" style="transition-delay:0.08s">重构生产力底层逻辑。</h2>
-        <p class="section-body fade-up" style="transition-delay:0.16s;margin-bottom:40px;">
+        <div class="overline fade-up" data-i18n="ent.overline">企业方案</div>
+        <h2 class="section-title fade-up" style="transition-delay:0.08s" data-i18n="ent.title">重构生产力底层逻辑。</h2>
+        <p class="section-body fade-up" style="transition-delay:0.16s;margin-bottom:40px;" data-i18n="ent.body">
           我们交付的不是软件，而是属于企业的智能基础设施。通过私有化部署 OpenClaw 与专属 Skill 矩阵，让 AI 从"陪聊"进化为"能干活"的核心资产。
         </p>
 
@@ -403,22 +408,22 @@
           <div class="value-item fade-up" style="transition-delay:0.1s">
             <div class="value-num">02</div>
             <div>
-              <div class="value-text-title">算力与数据主权</div>
-              <p class="value-text-body">本地化封装部署，数据永不出域，让商业秘密在绝对安全的环境中变现。符合等保、GDPR 及行业合规要求。</p>
+              <div class="value-text-title" data-i18n="ent.v2title">算力与数据主权</div>
+              <p class="value-text-body" data-i18n="ent.v2body">本地化封装部署，数据永不出域，让商业秘密在绝对安全的环境中变现。符合等保、GDPR 及行业合规要求。</p>
             </div>
           </div>
           <div class="value-item fade-up" style="transition-delay:0.2s">
             <div class="value-num">03</div>
             <div>
-              <div class="value-text-title">零边际扩展成本</div>
-              <p class="value-text-body">一次买断式交付，彻底告别 Token 计费焦虑与持续运维负担。规模扩大 10 倍，成本增量趋近于零。</p>
+              <div class="value-text-title" data-i18n="ent.v3title">零边际扩展成本</div>
+              <p class="value-text-body" data-i18n="ent.v3body">一次买断式交付，彻底告别 Token 计费焦虑与持续运维负担。规模扩大 10 倍，成本增量趋近于零。</p>
             </div>
           </div>
         </div>
 
         <div style="margin-top:40px;" class="fade-up">
           <a href="#footer" class="btn btn-primary" id="enterprise-cta">
-            获取企业定制方案
+            <span data-i18n="ent.cta">获取企业定制方案</span>
           </a>
         </div>
       </div>
@@ -436,15 +441,15 @@
 
     <div class="hardware-overline fade-in" id="hw-overline">
       <div class="hw-overline-dot"></div>
-      即将上线 · 敬请期待
+      <span data-i18n="hw.overline">即将上线 · 敬请期待</span>
     </div>
 
-    <h2 class="section-title fade-up" style="transition-delay:0.1s;max-width:640px;margin:0 auto 20px;">
+    <h2 class="section-title fade-up" style="transition-delay:0.1s;max-width:640px;margin:0 auto 20px;" data-i18n="hw.title">
       算力，从此以实体的形态进驻现场。
     </h2>
 
-    <p class="section-body fade-up" style="transition-delay:0.18s;margin:0 auto 0;text-align:center;max-width:640px;">
-      这是 PowerMatrix 首款面向政府与关键行业的 AI 智能终端，它不仅是一台机器，更是您私有域内的<strong style="color:var(--text-primary)">智能安全边界</strong>。
+    <p class="section-body fade-up" style="transition-delay:0.18s;margin:0 auto 0;text-align:center;max-width:640px;" data-i18n="hw.body">
+      这是 PowerMatrix 首款面向政府与关键行业的 AI 智能终端，它不仅是一台机器，更是您私有域内的<strong style="color:var(--text-primary)" data-i18n="hw.bodyBold">智能安全边界</strong>。
     </p>
 
     <!-- Hardware teaser -->
@@ -504,7 +509,7 @@
     <!-- CTA -->
     <div class="fade-up" style="transition-delay:0.6s;">
       <a href="javascript:void(0)" class="btn btn-primary" id="hw-cta" style="font-size:16px;padding:15px 36px;" data-coming-soon>
-        获取优先内测资格
+        <span data-i18n="hw.cta">获取优先内测资格</span>
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
           <path d="M2 8h12M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
@@ -530,9 +535,9 @@
 
   <div class="container" style="position:relative;z-index:1;">
 
-    <div class="overline fade-up" style="justify-content:center;">算力生态</div>
-    <h2 class="section-title fade-up" style="transition-delay:0.08s;text-align:center;margin:0 auto 16px;">让前沿算力，触手可及。</h2>
-    <p class="section-body fade-up" style="transition-delay:0.16s;text-align:center;margin:0 auto;">
+    <div class="overline fade-up" style="justify-content:center;" data-i18n="uni.overline">算力生态</div>
+    <h2 class="section-title fade-up" style="transition-delay:0.08s;text-align:center;margin:0 auto 16px;" data-i18n="uni.title">让前沿算力，触手可及。</h2>
+    <p class="section-body fade-up" style="transition-delay:0.16s;text-align:center;margin:0 auto;" data-i18n="uni.body">
       顶尖的开源模型不应只是实验室里的标本。OpenClaw 支持灵活的热插拔式换脑，借助 PowerMatrix 的分布式调度，让每个个体与企业都能以极低成本，驾驭全球顶级的模型算力。
     </p>
 
@@ -542,9 +547,9 @@
     </div>
 
     <div class="fade-up" style="transition-delay:0.4s;text-align:center;">
-      <p class="universe-tagline">加入进化，定义您的第一批数字部署。</p>
+      <p class="universe-tagline" data-i18n="uni.tagline">加入进化，定义您的第一批数字部署。</p>
       <a href="#footer" class="btn btn-primary" id="universe-cta" style="font-size:16px;padding:14px 36px;">
-        理解体验最新模型
+        <span data-i18n="uni.cta">理解体验最新模型</span>
       </a>
     </div>
 
@@ -566,15 +571,15 @@
           <img src="assets/images/logo.jpg" alt="PowerMatrix Logo" class="logo-img" />
           PowerMatrix
         </div>
-        <p class="footer-desc">
+        <p class="footer-desc" data-i18n="footer.desc">
           企业级 AI Agent 定制化解决方案。基于 OpenClaw 引擎，终结 AI 的对话时代，开启 AI 的物理执行时代。
         </p>
         <nav class="footer-nav" aria-label="页脚导航">
-          <a href="#hero">首页</a>
-          <a href="#revolution">核心引擎</a>
-          <a href="#skills">Skill 生态</a>
-          <a href="#enterprise">企业方案</a>
-          <a href="#hardware">智能终端</a>
+          <a href="#hero" data-i18n="nav.home">首页</a>
+          <a href="#revolution" data-i18n="nav.engine">核心引擎</a>
+          <a href="#skills" data-i18n="nav.skills">Skill 生态</a>
+          <a href="#enterprise" data-i18n="nav.enterprise">企业方案</a>
+          <a href="#hardware" data-i18n="nav.hardware">智能终端</a>
         </nav>
       </div>
 
@@ -591,7 +596,7 @@
 
     <!-- Bottom bar -->
     <div class="footer-bottom">
-      <p class="footer-copy">© 2026 PowerMatrix 企业级 AI Agent 定制化解决方案。保留所有权利。&nbsp;&nbsp;<a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer" style="color:var(--text-muted);transition:color 0.2s;" onmouseover="this.style.color='var(--text-primary)'" onmouseout="this.style.color='var(--text-muted)'">浙ICP备2025192760号-1</a></p>
+      <p class="footer-copy" id="footer-copy">© 2026 PowerMatrix 企业级 AI Agent 定制化解决方案。保留所有权利。&nbsp;&nbsp;<a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer" class="beian-link" style="color:var(--text-muted);transition:color 0.2s;" onmouseover="this.style.color='var(--text-primary)'" onmouseout="this.style.color='var(--text-muted)'">浙ICP备2025192760号-1</a></p>
       <p style="font-size:14px;font-weight:500;">
         <a href="mailto:service@powermatrix.tech"
            style="color:var(--accent-green);text-decoration:none;transition:color 0.2s,opacity 0.2s;opacity:0.85;letter-spacing:0.02em;"

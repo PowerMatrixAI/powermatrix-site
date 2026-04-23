@@ -1617,3 +1617,30 @@ body::before {
   flex-shrink: 0;
   font-size: 11px;
 }
+
+/* ============================================================
+   LANGUAGE SWITCHER
+   ============================================================ */
+.lang-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  cursor: pointer;
+  font-family: var(--font-main);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: var(--text-muted);
+  transition: all 0.3s var(--ease-out);
+}
+.lang-switcher:hover { border-color: var(--border-green); color: var(--text-primary); }
+.lang-opt { cursor: pointer; transition: color 0.2s; padding: 1px 2px; }
+.lang-opt.active { color: var(--accent-green); }
+.lang-divider { color: var(--border); font-weight: 300; }
+body.lang-transitioning [data-i18n] { opacity: 0; transition: opacity 0.15s ease; }
+html[lang="en"] .beian-link { display: none; }
+@media (max-width: 768px) { .lang-switcher { display: none; } }
