@@ -397,7 +397,8 @@ document.head.appendChild(rStyle);
       'rev.h2': '全时域响应', 'rev.h2b': '7×24h 待命，无界协作。数字员工永不请假，永不疲劳，毫秒级唤醒。',
       'rev.h3': '类人级交互', 'rev.h3b': '如同与最默契的助理共事。理解上下文，记住偏好，主动汇报进度。',
       'skills.overline': 'Skill 生态', 'skills.title': '可生长的数字肌体。',
-      'skills.body': 'OpenClaw 是大脑，Skill 即为其连接万物的神经与肌肉。\n它不是死板的代码插件，而是被蒸馏后的执行基因。通过排列组合 Skill，AI 得以完成跨平台的精密"连招"。',
+      'skills.body1': 'OpenClaw 是大脑，Skill 即为其连接万物的神经与肌肉。',
+      'skills.body2': '它不是死板的代码插件，而是被蒸馏后的执行基因。通过排列组合 Skill，AI 得以完成跨平台的精密"连招"。',
       'skills.s1name': '全域感知', 'skills.s1desc': '像人一样检索、甄别并抓取全网流动数据。实时监控行业动态、竞品信息与市场信号，信息差永不存在。',
       'skills.s2name': '界面跨越', 'skills.s2desc': '模拟触碰与点击，击穿软件间的数据高墙。从 CRM 到 ERP，任何界面皆可操控，数据孤岛彻底消除。',
       'skills.s3name': '文档智理', 'skills.s3desc': '自动化读写与结构转换，终结机械劳动。Excel、Word、PDF、数据库一键互通，报告自动生成。',
@@ -415,6 +416,9 @@ document.head.appendChild(rStyle);
       'hw.overline': '即将上线 · 敬请期待', 'hw.title': '算力，从此以实体的形态进驻现场。',
       'hw.body': '这是 PowerMatrix 首款面向政府与关键行业的 AI 智能终端，它不仅是一台机器，更是您私有域内的',
       'hw.bodyBold': '智能安全边界', 'hw.cta': '获取优先内测资格',
+      'hw.body2a': '我们将 OpenClaw 核心引擎、经严格筛选的企业级 Skill 矩阵，以及全球顶尖的开源大模型，完整封装于这台物理设备之中。',
+      'hw.body2b': '数据绝不出域，Token 成本归零。',
+      'hw.body2c': '无需连接外网，无需上传数据，一切智慧的产生与执行皆在您完全掌控的方寸之间闭环。',
       'uni.overline': '算力生态', 'uni.title': '让前沿算力，触手可及。',
       'uni.body': '顶尖的开源模型不应只是实验室里的标本。OpenClaw 支持灵活的热插拔式换脑，借助 PowerMatrix 的分布式调度，让每个个体与企业都能以极低成本，驾驭全球顶级的模型算力。',
       'uni.tagline': '加入进化，定义您的第一批数字部署。', 'uni.cta': '理解体验最新模型',
@@ -444,7 +448,8 @@ document.head.appendChild(rStyle);
       'rev.h2': 'Always-On Response', 'rev.h2b': '7×24h standby, boundless collaboration. Digital employees never take leave, never tire, millisecond wake-up.',
       'rev.h3': 'Human-Level Interaction', 'rev.h3b': 'Like working with the most intuitive assistant. Understands context, remembers preferences, proactively reports progress.',
       'skills.overline': 'Skill Hub', 'skills.title': 'A Growing Digital Workforce.',
-      'skills.body': 'OpenClaw is the brain; Skills are the nerves and muscles connecting everything.\nNot rigid code plugins, but distilled execution genes. Combine Skills to perform precision multi-platform tasks.',
+      'skills.body1': 'OpenClaw is the brain; Skills are the nerves and muscles connecting everything.',
+      'skills.body2': 'Not rigid code plugins, but distilled execution genes. Combine Skills to perform precision multi-platform tasks.',
       'skills.s1name': 'Global Perception', 'skills.s1desc': 'Search, filter, and extract data flowing across the entire web — just like a human. Monitor industry trends, competitor intelligence, and market signals in real time.',
       'skills.s2name': 'UI Traversal', 'skills.s2desc': 'Simulate clicks and interactions to break through data silos between applications. From CRM to ERP, any interface is controllable — data islands eliminated.',
       'skills.s3name': 'Doc Intelligence', 'skills.s3desc': 'Automate reading, writing, and structural conversion — ending mechanical labor. Excel, Word, PDF, databases all interconnected. Reports generated automatically.',
@@ -462,6 +467,9 @@ document.head.appendChild(rStyle);
       'hw.overline': 'Coming Soon · Stay Tuned', 'hw.title': 'AI Power, Now in Physical Form.',
       'hw.body': 'PowerMatrix\'s first AI terminal for government and critical industries. Not just a machine — it\'s the ',
       'hw.bodyBold': 'intelligent security perimeter', 'hw.cta': 'Request Early Access',
+      'hw.body2a': 'We have fully integrated the OpenClaw core engine, a rigorously curated enterprise Skill matrix, and the world\'s top open-source models into this physical device.',
+      'hw.body2b': 'Data never leaves your domain. Token costs drop to zero.',
+      'hw.body2c': 'No internet connection required, no data uploads needed — all intelligence is generated and executed within the boundaries you fully control.',
       'uni.overline': 'AI Ecosystem', 'uni.title': 'Frontier AI, Within Reach.',
       'uni.body': 'Top open-source models shouldn\'t be laboratory specimens. OpenClaw supports hot-swappable model upgrades. With PowerMatrix\'s distributed scheduling, every individual and enterprise can harness world-class AI at minimal cost.',
       'uni.tagline': 'Join the evolution. Define your first digital deployment.', 'uni.cta': 'Explore Latest Models',
@@ -477,7 +485,10 @@ document.head.appendChild(rStyle);
     document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const key = el.getAttribute('data-i18n');
-      if (dict[key] !== undefined) el.textContent = dict[key];
+      if (dict[key] === undefined) return;
+      // Skip elements that contain child elements — let their children translate individually
+      if (el.children.length > 0) return;
+      el.textContent = dict[key];
     });
     // Update lang switcher active state
     document.querySelectorAll('.lang-opt').forEach(opt => {
